@@ -481,15 +481,7 @@ h3{
 
 }
 body {
-    background: #1a2641; /* pure black background */
-    color: #fff;      /* white text */
+    background: #1a2641 !important; /* pure black background */
+    color: #fff !important;      /* white text */
 }
-
-
-
-
-
-
-
-
 
