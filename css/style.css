@@ -189,7 +189,7 @@ h3{
     transition: 0.5s;
 }
 .layer:hover{
-	background: rgba(226, 0, 0, 0.7);
+	background: rgba(93, 101, 176, 0.7);
 }
 .layer h3{
 	width: 100%;
@@ -484,6 +484,7 @@ body {
     background: #1a2641 !important; /* pure black background */
     color: #fff !important;      /* white text */
 }
+
 
 
 
