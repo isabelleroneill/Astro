@@ -60,3 +60,50 @@
 				</div>
 			</div>
 		</section>
+		<section class="game-gallery">
+  		<h1>Play Our Games</h1>
+			<p>Click an image to visit the game!</p>
+			  	<div class="gallery-grid">
+			    <div class="game-item">
+			      <a href=https://www.roblox.com/games/84509165329390/Space-Obby" target="_blank">
+			        <img src="images/game1.jpg" alt="Space Obby">
+			      </a>
+			    </div>
+			    <div class="game-item">
+			      <a href="https://www.roblox.com/games/85966338074069/Space-Exploration-Museum" target="_blank">
+			        <img src="images/game2.jpg" alt="Space Exploration Museum">
+			      </a>
+			    </div>
+			 </div>
+1		</section>
+			<style>
+			.game-gallery {
+			    text-align: center;
+			    padding: 50px 20px;
+			}
+			
+			.gallery-grid {
+			    display: flex;
+			    flex-wrap: wrap;
+			    gap: 20px;
+			    justify-content: center;
+			}
+			
+			.game-item {
+			    width: 250px;
+			    border-radius: 10px;
+			    overflow: hidden;
+			    transition: transform 0.3s;
+			}
+			
+			.game-item img {
+			    width: 100%;
+			    display: block;
+			    border-radius: 10px;
+			}
+			
+			.game-item:hover {
+			    transform: scale(1.05);
+			}
+			</style>
+			
