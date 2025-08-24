@@ -47,83 +47,93 @@
 			<h1>AstroVisionaries Research</h1>
 		</section>
 		<!-- header section end -->
-
-		<!-- blog page content -->
-		<section class="blog-content">
-			<div class="row">
-			
-		<head>
-		    <meta charset="UTF-8">
-		    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		    <title>AstroVisionaries Research Papers</title>
-		    <style>
-		        body {
-		            font-family: 'Poppins', sans-serif;
-		            background: #f4f4f9;
-		            color: #222;
-		            margin: 0;
-		            padding: 0;
-		        }
-		        .container {
-		            width: 90%;
-		            max-width: 1200px;
-		            margin: auto;
-		            padding: 50px 0;
-		        }
-		        h1 {
-		            text-align: center;
-		            margin-bottom: 40px;
-		        }
-		        .papers-grid {
-		            display: flex;
-		            flex-wrap: wrap;
-		            gap: 30px;
-		            justify-content: center;
-		        }
-		        .paper-card {
-		            background: #fff;
-		            border-radius: 10px;
-		            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-		            width: 280px;
-		            text-align: center;
-		            overflow: hidden;
-		            transition: transform 0.3s;
-		        }
-		        .paper-card:hover {
-		            transform: translateY(-5px);
-		        }
-		        .paper-card img {
-		            width: 100%;
-		            height: 180px;
-		            object-fit: cover;
-		        }
-		        .paper-card h3 {
-		            margin: 15px 10px 10px 10px;
-		            font-size: 18px;
-		        }
-		        .paper-card p {
-		            font-size: 14px;
-		            margin: 0 10px 15px 10px;
-		            color: #555;
-		        }
-		        .paper-card a {
-		            display: inline-block;
-		            margin-bottom: 15px;
-		            padding: 10px 20px;
-		            background: #5d65b0;
-		            color: #fff;
-		            text-decoration: none;
-		            border-radius: 5px;
-		            transition: background 0.3s;
-		        }
-		        .paper-card a:hover {
-		            background: #3b45a5;
-		        }
-		    </style>
-		</head>
-		<body>
-		
+		<section id="research">
 		    <div class="container">
 		        <h1>Research Papers</h1>
 		        <div class="papers-grid">
 		            <div class="paper-card">
+		                <h3>Mystery of Dark Energy</h3>
+		                <p>High school researcher Rijul Saxena explored the mystery of dark mystery in this project. One of the greatest mysteries of modern astronomy is dark energy unseen force-pushing the universe apart at accelerating speeds. This paper discusses dark energy, how it was found, and why its process is so important for understanding the universe.</p>
+		                <a href="papers/Mystery of dark energy (1).pdf" target="_blank">View PDF</a>
+		            </div>
+		            <div class="paper-card">
+		                <h3>The Martian Methane Enigma</h3>
+		                <p>High school researcher Smaya Nellipudi investigated the mystery of methane on Mars in this project. The research explores potential sources of the gas, from geological activity to microbial life, and examines fluctuations in methane levels detected by past missions. This project highlights the significance of methane as a possible biosignature and its implications for the search for extraterrestrial life and Mars’ atmospheric dynamics. </p>
+		                <a href="papers/The Martian Methan Enigma (1).pdf" target="_blank">View PDF</a>
+		            </div>
+		            <div class="paper-card">
+		                <h3>From Nine to Eight: How Eris Changed the Solar System's Story</h3>
+		                <p>Undergraduate researcher Shamitaa Arora explores the transformative impact of Eris's discovery on planetary classification. Her analysis delves into the controversy surrounding Eris as a potential tenth planet, the International Astronomical Union's 2006 redefinition of a planet, and the eventual reclassification of Pluto as a dwarf planet. This study highlights the evolving nature of scientific definitions and their role in shaping our understanding of the solar system.</p>
+		                <a href="papers/From Nine to Eight_ How Eris Changed the Solar System's Story.pdf" target="_blank">View PDF</a>
+		            </div>
+					<div class="paper-card">
+		                <h3>Where Did Saturn's Rings Come From?</h3>
+		                <p>High school researcher Samantha Pradhan explored the mystery of Saturn's iconic rings in this project. The research delves into the theories behind their formation, examining the role of Saturn's gravity and the potential collision of celestial bodies. The project highlights the dynamic processes that have shaped Saturn's rings and their significance in understanding planetary formation and evolution.</p>
+		                <a href="papers/Where did Saturn's rings come from_.pdf" target="_blank">View PDF</a>
+		            </div>
+		            <!-- Add more paper cards as needed -->
+		        </div>
+		    </div>
+		</section>
+		
+		<style>
+		/* Research section styles */
+		#research {
+		    width: 90%;
+		    margin: 80px auto;
+		    text-align: center;
+		}
+		
+		#research h1 {
+		    font-size: 36px;
+		    margin-bottom: 40px;
+		    color: #fff; /* Or whatever matches your theme */
+		}
+		
+		.papers-grid {
+		    display: flex;
+		    gap: 30px;
+		    flex-wrap: wrap;
+		    justify-content: center;
+		}
+		
+		.paper-card {
+		    background-color: #5d65b0; /* Matches your course cards */
+		    border-radius: 10px;
+		    padding: 20px;
+		    width: 300px; /* Adjust width as needed */
+		    box-sizing: border-box;
+		    text-align: left;
+		    transition: 0.3s;
+		}
+		
+		.paper-card:hover {
+		    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+		}
+		
+		.paper-card h3 {
+		    color: #fff;
+		    margin-bottom: 10px;
+		}
+		
+		.paper-card p {
+		    color: #c9c7eb;
+		    font-size: 14px;
+		    margin-bottom: 15px;
+		}
+		
+		.paper-card a {
+		    text-decoration: none;
+		    color: #fff;
+		    border: 1px solid #fff;
+		    padding: 8px 12px;
+		    border-radius: 5px;
+		    transition: 0.3s;
+		}
+		
+		.paper-card a:hover {
+		    background-color: #fff;
+		    color: #5d65b0;
+		}
+		</style>
+		
