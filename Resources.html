@@ -1,317 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>AstroVisionaries</title>
-		<link rel="icon" type="image" href="images/A.png">
-		<!-- style.css linking here -->
-		<link rel="stylesheet" href="css/style.css">
-		<!-- font family linking here -->
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-		<!-- font-awesome.min.css linking here -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	</head>
-	<body>
-		<!-- header section strt -->
-		<section class="sub-header">
-			<!-- nav strt -->
-			<nav>
-				<a href="index.html"><img src="images/logo.PNG" alt=""></a>
-				<div class="nav-links" id="navLinks">
-					<i class="fa fa-times" onclick="hideMenu()"></i>
-					<ul>
-						<li>
-							<a href="index.html">HOME</a>
-						</li>
-						<li>
-							<a href="About.html">ABOUT</a>
-						</li>
-						<li>
-							<a href="Course.html">COURSES</a>
-						</li>
-						<li>
-							<a href="Research.html">RESEARCH</a>
-						</li>
-							<li>
-							<a href="Resources.html">RESOURCES</a>
-						</li>
-						<li>
-							<a href="Contact.html">CONTACT</a>
-						</li>
-					</ul>
-				</div>
-				<i class="fa fa-bars" onclick="showMenu()"></i>
-			</nav>
-			<!-- nav end -->
-			<h1>Resources</h1>
-		</section>
-		<!-- header section end -->
-		<div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
-		 padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
-		 border-radius: 8px; will-change: transform;">
-		  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-		    src="https://www.canva.com/design/DAGxB3MtxEA/PLl65jA5AkekXWHUSUS1WA/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-		  </iframe>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AstroVisionaries</title>
+	<link rel="icon" type="image" href="images/A.png">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; }
+		.sub-header { text-align: center; padding: 80px 20px; background-color: #1a2641; color: #fff; }
+		.sub-header h1 { margin: 0; font-size: 48px; }
+		.blog { max-width: 1000px; margin: 40px auto; text-align: center; line-height: 1.7; padding: 0 20px; }
+		.blog-img { width: 100%; max-width: 600px; margin-bottom: 30px; border-radius: 10px; }
+		.blog h2 { font-size: 36px; margin-bottom: 20px; color: #5d65b0; }
+		.blog p { font-size: 18px; margin-bottom: 20px; }
+		iframe.full-width { width: 100%; height: 80vh; border: none; border-radius: 8px; box-shadow: 0 2px 8px rgba(63,69,81,0.16); }
+		footer { background: #1a2641; color: #fff; text-align: center; padding: 40px 20px; }
+		footer .icons i { margin: 0 10px; }
+		.av-section { width: 90%; max-width: 1200px; margin: 60px auto; }
+		.av-header { display: flex; gap: 16px; align-items: baseline; justify-content: space-between; flex-wrap: wrap; }
+		.av-updated { font-size: 12px; opacity: 0.8; padding: 4px 8px; border: 1px solid rgba(255,255,255,0.2); border-radius: 999px; }
+		.av-intro { margin: 10px 0 24px; opacity: 0.9; }
+		.av-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+		.av-card { background: #ffffff; color: #222; border-radius: 12px; padding: 18px; box-shadow: 0 6px 20px rgba(0,0,0,0.08); }
+		.av-card h3 { margin: 0 0 8px; font-size: 18px; }
+		.av-card p { margin: 0 0 12px; font-size: 14px; line-height: 1.5; }
+		.av-btn { display: inline-block; text-decoration: none; padding: 8px 14px; border-radius: 8px; font-size: 14px; border: 1px solid #5d65b0; color: #5d65b0; }
+		.av-btn:hover { background: #5d65b0; color: #fff; }
+	</style>
+</head>
+<body>
+
+<!-- Header -->
+<section class="sub-header">
+	<nav>
+		<a href="index.html"><img src="images/logo.PNG" alt="AstroVisionaries Logo"></a>
+		<div class="nav-links" id="navLinks">
+			<i class="fa fa-times" onclick="hideMenu()"></i>
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="About.html">ABOUT</a></li>
+				<li><a href="Course.html">COURSES</a></li>
+				<li><a href="Research.html">RESEARCH</a></li>
+				<li><a href="Resources.html">RESOURCES</a></li>
+				<li><a href="Contact.html">CONTACT</a></li>
+			</ul>
 		</div>
-		<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGxB3MtxEA&#x2F;PLl65jA5AkekXWHUSUS1WA&#x2F;view?utm_content=DAGxB3MtxEA&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">AstroVisionaries</a> by Isabelle O'Neill
-		<!-- blog page content -->
-		<section class="blog-content">
-			      <section class="blog-content">
-		    <div class="blog">
-		        <img src="images/certificate.jpg" alt="" class="blog-img">
-		        <h2>10 Free Space Tools</h2>
-		        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sunt dignissimos adipisci? Enim, assumenda consectetur corrupti illo temporibus, nisi expedita, quod sit, delectus officia natus aliquid minus numquam.</p>
-		        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus corrupti quibusdam, fugiat maxime, veritatis, qui nobis at perspiciatis debitis nemo numquam sit ad aut, vel ratione ipsum labore quos similique. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore quas doloremque cum, temporibus delectus, adipisci ut praesentium alias! Nulla asperiores sequi aut assumenda numquam nostrum, repellendus, a vero officia odio.</p>
-		        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis obcaecati error commodi nulla ex officia amet rerum, cum velit nam a id magnam voluptatum sequi minus excepturi, nisi perspiciatis dicta. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis quibusdam soluta error. Deleniti in voluptas dolore quae minus facere, veritatis laboriosam dolorem molestias! Laudantium deleniti illum, itaque asperiores repellat hic.</p>
-		        <p>Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Architecto illum minus sed assumenda, itaque fugiat ad. Facilis alias voluptates, fugit adipisci veritatis atque, laborum ex. Quidem dicta ab dignissimos dolore! Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Voluptatem.</p>
-		    </div>
-			<h2>There are many ways to become involved in this growing industry that are not reserved just for rocket scientists and astronauts. Check out the presentation below!</h2>
-			<div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
-			 padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
-			 border-radius: 8px; will-change: transform;">
-			  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-			    src="https://www.canva.com/design/DAGxB3MtxEA/PLl65jA5AkekXWHUSUS1WA/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-			  </iframe>
-			</div>
-			<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGxB3MtxEA&#x2F;PLl65jA5AkekXWHUSUS1WA&#x2F;view?utm_content=DAGxB3MtxEA&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"
-		</section>
+		<i class="fa fa-bars" onclick="showMenu()"></i>
+	</nav>
+	<h1>Resources</h1>
+</section>
 
-<style>
-.blog {
-    max-width: 1000px;
-    text-align: center;
-    line-height: 1.7;
-}
+<!-- Canva Presentation -->
+<div style="margin: 40px 0;">
+	<iframe class="full-width" src="https://www.canva.com/design/DAGxB3MtxEA/PLl65jA5AkekXWHUSUS1WA/view?embed" allowfullscreen></iframe>
+	<p style="text-align:center;">View full presentation on <a href="https://www.canva.com/design/DAGxB3MtxEA/PLl65jA5AkekXWHUSUS1WA/view?utm_content=DAGxB3MtxEA&utm_campaign=designshare&utm_medium=embeds&utm_source=link" target="_blank">Canva</a></p>
+</div>
 
-.blog-img {
-    width: 100%;
-    max-width: 600px;
-    margin-bottom: 30px;
-    border-radius: 10px;
-}
-.blog h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #5d65b0; /* adjust if needed for your theme */
-}
-.blog p {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-</style>
+<!-- Blog Content -->
+<div class="blog">
+	<img src="images/certificate.jpg" alt="Certificate Image" class="blog-img">
+	<h2>10 Free Space Tools</h2>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sunt dignissimos adipisci? Enim, assumenda consectetur corrupti illo temporibus, nisi expedita, quod sit, delectus officia natus aliquid minus numquam.</p>
+</div>
 
-
-		<!-- ========= SPACE TOOLS SECTION ========= -->
+<!-- Space Tools Section -->
 <section id="space-tools" class="av-section">
-  <div class="av-container">
-    <div class="av-header">
-      <h2>10 Free Space Tools Every Student Should Know</h2>
-      <span class="av-updated">Last updated: Aug 24, 2025</span>
-    </div>
+	<div class="av-container">
+		<div class="av-header">
+			<h2>10 Free Space Tools Every Student Should Know</h2>
+			<span class="av-updated">Last updated: Aug 24, 2025</span>
+		</div>
 
-    <div class="av-grid">
-      <!-- CARD -->
-      <article class="av-card">
-        <h3>Stellarium (Web/Desktop)</h3>
-        <p>Planetarium that shows a realistic night sky from any location/time. Great for star-hopping and learning constellations.</p>
-        <a href="https://stellarium.org" target="_blank" class="av-btn">Open</a>
-      </article>
-
-      <article class="av-card">
-        <h3>NASA Eyes</h3>
-        <p>Interactive visualizations of Earth, the Solar System, exoplanets, and missions. Explore spacecraft paths and planets in 3D.</p>
-        <a href="https://eyes.nasa.gov" target="_blank" class="av-btn">Open</a>
-      </article>
-
-      <article class="av-card">
-        <h3>JPL HORIZONS</h3>
-        <p>High-precision ephemerides (positions) for planets, asteroids, comets, and spacecraft. For when you need real numbers.</p>
-        <a href="https://ssd.jpl.nasa.gov/horizons" target="_blank" class="av-btn">Open</a>
-      </article>
-
-      <article class="av-card">
-        <h3>ESA Sky</h3>
-        <p>Web sky explorer with multi-wavelength survey layers and mission data (Gaia, Planck, Herschel, etc.).</p>
-        <a href="https://sky.esa.int" target="_blank" class="av-btn">Open</a>
-      </article>
-
-      <article class="av-card">
-        <h3>WorldWide Telescope</h3>
-        <p>Panoramic sky/planet explorer with guided tours. Switch between wavelengths and telescopes.</p>
-        <a href="https://worldwidetelescope.org/webclient/" target="_blank" class="av-btn">Open</a>
-      </article>
-
-      <article class="av-card">
-        <h3>NASA Exoplanet Archive</h3>
-        <p>Official database of confirmed exoplanets with plots, downloads, and tools for exploration.</p>
-        <a href="https://exoplanetarchive.ipac.caltech.edu" target="_blank" class="av-btn">Open</a>
-      </article>
-
-      <article class="av-card">
-        <h3>SIMBAD / Aladin Lite</h3>
-        <p>Look up any astronomical object, then view images/overlays right in your browser with Aladin Lite.</p>
-        <a href="https://simbad.cds.unistra.fr" target="_blank" class="av-btn">Open</a>
-      </article>
-
-      <article class="av-card">
-        <h3>Heavens-Above</h3>
-        <p>Track satellites, ISS passes, and bright flares for your location—great for planning skywatching.</p>
-        <a href="https://www.heavens-above.com" target="_blank" class="av-btn">Open</a>
-      </article>
-
-      <article class="av-card">
-        <h3>Stellarium Web Sketcher (Alt: Sky & Telescope Charts)</h3>
-        <p>Create printable star charts for outreach or personal observing sessions.</p>
-        <a href="https://stellarium-web.org" target="_blank" class="av-btn">Open</a>
-      </article>
-
-      <article class="av-card">
-        <h3>GLOBE Observer (NASA)</h3>
-        <p>Mobile app to log clouds, trees, mosquitoes, and land cover—feeds real science datasets.</p>
-        <a href="https://observer.globe.gov" target="_blank" class="av-btn">Open</a>
-      </article>
-    </div>
-  </div>
+		<div class="av-grid">
+			<article class="av-card">
+				<h3>Stellarium (Web/Desktop)</h3>
+				<p>Planetarium that shows a realistic night sky from any location/time. Great for star-hopping and learning constellations.</p>
+				<a href="https://stellarium.org" target="_blank" class="av-btn">Open</a>
+			</article>
+			<article class="av-card">
+				<h3>NASA Eyes</h3>
+				<p>Interactive visualizations of Earth, the Solar System, exoplanets, and missions. Explore spacecraft paths and planets in 3D.</p>
+				<a href="https://eyes.nasa.gov" target="_blank" class="av-btn">Open</a>
+			</article>
+			<article class="av-card">
+				<h3>JPL HORIZONS</h3>
+				<p>High-precision ephemerides (positions) for planets, asteroids, comets, and spacecraft. For when you need real numbers.</p>
+				<a href="https://ssd.jpl.nasa.gov/horizons" target="_blank" class="av-btn">Open</a>
+			</article>
+			<article class="av-card">
+				<h3>ESA Sky</h3>
+				<p>Web sky explorer with multi-wavelength survey layers and mission data (Gaia, Planck, Herschel, etc.).</p>
+				<a href="https://sky.esa.int" target="_blank" class="av-btn">Open</a>
+			</article>
+			<article class="av-card">
+				<h3>WorldWide Telescope</h3>
+				<p>Panoramic sky/planet explorer with guided tours. Switch between wavelengths and telescopes.</p>
+				<a href="https://worldwidetelescope.org/webclient/" target="_blank" class="av-btn">Open</a>
+			</article>
+		</div>
+	</div>
 </section>
 
-<!-- ========= CITIZEN SCIENCE SECTION ========= -->
+<!-- Citizen Science Section -->
 <section id="citizen-science" class="av-section">
-  <div class="av-container">
-    <div class="av-header">
-      <h2>Top Citizen Science Projects You Can Join Today</h2>
-      <span class="av-updated">Last updated: Aug 24, 2025</span>
-    </div>
+	<div class="av-container">
+		<div class="av-header">
+			<h2>Top Citizen Science Projects You Can Join Today</h2>
+			<span class="av-updated">Last updated: Aug 24, 2025</span>
+		</div>
 
-    <p class="av-intro">
-      These projects welcome beginners and students. Most only need a browser or a phone—no advanced math required.
-    </p>
+		<p class="av-intro">
+			These projects welcome beginners and students. Most only need a browser or a phone—no advanced math required.
+		</p>
 
-    <div class="av-grid">
-      <article class="av-card">
-        <h3>Cloudspotting on Mars (NASA/JPL)</h3>
-        <p>Help identify Martian clouds in Mars Climate Sounder data to improve our understanding of Mars’ atmosphere.</p>
-        <a href="https://cloudspotting.onerous.cloud/ (or search 'Cloudspotting on Mars NASA')" target="_blank" class="av-btn">Join</a>
-      </article>
+		<div class="av-grid">
+			<article class="av-card">
+				<h3>Cloudspotting on Mars (NASA/JPL)</h3>
+				<p>Help identify Martian clouds in Mars Climate Sounder data to improve our understanding of Mars’ atmosphere.</p>
+				<a href="https://cloudspotting.onerous.cloud/" target="_blank" class="av-btn">Join</a>
+			</article>
+			<article class="av-card">
+				<h3>Planet Hunters TESS (Zooniverse)</h3>
+				<p>Classify light curves from NASA’s TESS mission to help find new exoplanet candidates.</p>
+				<a href="https://www.zooniverse.org/projects/nora-dot-eisner/planet-hunters-tess" target="_blank" class="av-btn">Join</a>
+			</article>
+			<article class="av-card">
+				<h3>Backyard Worlds: Planet 9</h3>
+				<p>Search WISE infrared images for moving objects—brown dwarfs and distant solar system bodies.</p>
+				<a href="https://www.zooniverse.org/projects/marckuchner/backyard-worlds-planet-9" target="_blank" class="av-btn">Join</a>
+			</article>
+			<article class="av-card">
+				<h3>Disk Detective</h3>
+				<p>Help identify planetary-system debris disks in telescope data by classifying images.</p>
+				<a href="https://www.zooniverse.org/projects/nora-dot-eisner/disk-detective" target="_blank" class="av-btn">Join</a>
+			</article>
+		</div>
 
-      <article class="av-card">
-        <h3>Planet Hunters TESS (Zooniverse)</h3>
-        <p>Classify light curves from NASA’s TESS mission to help find new exoplanet candidates.</p>
-        <a href="https://www.zooniverse.org/projects/nora-dot-eisner/planet-hunters-tess" target="_blank" class="av-btn">Join</a>
-      </article>
-
-      <article class="av-card">
-        <h3>Backyard Worlds: Planet 9</h3>
-        <p>Search WISE infrared images for moving objects—brown dwarfs and distant solar system bodies.</p>
-        <a href="https://www.zooniverse.org/projects/marckuchner/backyard-worlds-planet-9" target="_blank" class="av-btn">Join</a>
-      </article>
-
-      <article class="av-card">
-        <h3>Disk Detective</h3>
-        <p>Help identify planetary-system debris disks in telescope data by classifying images.</p>
-        <a href="https://www.zooniverse.org/projects/nora-dot-eisner/disk-detective" target="_blank" class="av-btn">Join</a>
-      </article>
-
-      <article class="av-card">
-        <h3>Aurorasaurus</h3>
-        <p>Report aurora sightings and help researchers map auroral activity in real time.</p>
-        <a href="https://aurorasaurus.org" target="_blank" class="av-btn">Join</a>
-      </article>
-
-      <article class="av-card">
-        <h3>Gravity Spy (LIGO)</h3>
-        <p>Classify noise “glitches” in gravitational-wave detectors to improve astrophysical signal detection.</p>
-        <a href="https://www.zooniverse.org/projects/zooniverse/gravity-spy" target="_blank" class="av-btn">Join</a>
-      </article>
-
-      <article class="av-card">
-        <h3>Exoplanet Watch (NASA)</h3>
-        <p>Contribute transit timing observations; also offers educational resources for beginners.</p>
-        <a href="https://exoplanets.nasa.gov/exoplanet-watch/" target="_blank" class="av-btn">Join</a>
-      </article>
-
-      <article class="av-card">
-        <h3>Globe at Night</h3>
-        <p>Measure sky brightness to study light pollution trends—simple and global.</p>
-        <a href="https://www.globeatnight.org" target="_blank" class="av-btn">Join</a>
-      </article>
-
-      <article class="av-card">
-        <h3>Radio Galaxy Zoo / RGZ: EMU</h3>
-        <p>Match radio sources to their host galaxies to study black holes and galaxy evolution.</p>
-        <a href="https://www.zooniverse.org/projects/chrismrp/radio-galaxy-zoo-emu" target="_blank" class="av-btn">Join</a>
-      </article>
-
-      <article class="av-card">
-        <h3>Citizen Science on Zooniverse</h3>
-        <p>Explore hundreds of vetted astronomy and space projects. Filter by difficulty and topic.</p>
-        <a href="https://www.zooniverse.org/projects?discipline=astronomy" target="_blank" class="av-btn">Browse</a>
-      </article>
-    </div>
-
-    <div class="av-note">
-      <strong>Tip:</strong> For students under 18, join with a parent/guardian or teacher account when a project has age restrictions.
-    </div>
-  </div>
+		<div class="av-note" style="margin-top:20px; font-size:14px;">
+			<strong>Tip:</strong> For students under 18, join with a parent/guardian or teacher account when a project has age restrictions.
+		</div>
+	</div>
 </section>
 
-<!-- ========= LIGHTWEIGHT STYLES (you can paste once per page) ========= -->
-<style>
-  .av-section { width: 90%; max-width: 1200px; margin: 60px auto; }
-  .av-container { display: block; }
-  .av-header { display: flex; gap: 16px; align-items: baseline; justify-content: space-between; flex-wrap: wrap; }
-  .av-updated { font-size: 12px; opacity: 0.8; padding: 4px 8px; border: 1px solid rgba(255,255,255,0.2); border-radius: 999px; }
-  .av-intro { margin: 10px 0 24px; opacity: 0.9; }
-  .av-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
-  .av-card { background: #ffffff; color: #222; border-radius: 12px; padding: 18px; box-shadow: 0 6px 20px rgba(0,0,0,0.08); }
-  .av-card h3 { margin: 0 0 8px; font-size: 18px; }
-  .av-card p { margin: 0 0 12px; font-size: 14px; line-height: 1.5; }
-  .av-btn { display: inline-block; text-decoration: none; padding: 8px 14px; border-radius: 8px; font-size: 14px; border: 1px solid #5d65b0; color: #5d65b0; }
-  .av-btn:hover { background: #5d65b0; color: #fff; }
-  /* Dark backgrounds support (if your page is dark) */
-  body.dark .av-card { background: #222a44; color: #f1f3ff; }
-  body.dark .av-btn { border-color: #aab0ff; color: #aab0ff; }
-  body.dark .av-btn:hover { background: #aab0ff; color: #1a1f3a; }
-</style>
+<!-- Google Sheets -->
+<section style="margin: 40px 0;">
+	<h2 style="text-align:center;">External Resources</h2>
+	<p style="text-align:center; max-width:900px; margin:0 auto 20px auto;">
+		While AstroVisionaries is an accessible starting point, there are many other programs and opportunities available at colleges and more established institutions. Many of these programs offer in-depth training and specialized resources to build a strong background in space sciences.
+	</p>
+	<iframe class="full-width" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTTI2gBVSu0cqEG4JwcNKssMT4LPDmCsi-OkU4gH5HgVZHu3i0MacLyZz8_8L9LjjF75s7Ttrsod03u/pubhtml?widget=true&amp;headers=false"></iframe>
+</section>
 
-		
-		<section align="center">
-  			<h2>External Resources</h2>
-  			<p>While AstroVisionaries is an accessible starting point, it’s important to recognize that there are other programs and opportunities available at colleges and more established institutions. 
-    Many of these programs offer in-depth training and specialized resources to build a strong background in the field of space sciences and technology. However, they often come with tuition costs and other expenses, which can be a challenge for some.
-  			</p>
-		    <br>
-  <!-- iframe styled to fill width and height -->
-  			<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTTI2gBVSu0cqEG4JwcNKssMT4LPDmCsi-OkU4gH5HgVZHu3i0MacLyZz8_8L9LjjF75s7Ttrsod03u/pubhtml?widget=true&amp;headers=false"
-    style="width: 100%; height: 80vh; border: none;">
- 	 		</iframe>
-		</section>
+<!-- Footer -->
+<footer>
+	<h4>About Us</h4>
+	<p>Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Ut reprehenderit labore eligendi tenetur, sapiente ab doloremque id provident dignissimos.</p>
+	<div class="icons">
+		<i class="fa fa-facebook"></i>
+		<i class="fa fa-twitter"></i>
+		<i class="fa fa-instagram"></i>
+		<i class="fa fa-linkedin"></i>
+	</div>
+	<p>Made with <i class="fa fa-heart"></i> by AstroVisionaries Team</p>
+</footer>
 
+<script>
+	var navLinks = document.getElementById("navLinks");
+	function showMenu(){ navLinks.style.right = "0"; }
+	function hideMenu(){ navLinks.style.right = "-200px"; }
+</script>
 
-		
-		<!-- footer strt -->
-		<section class="footer">
-			<h4>About Us</h4>
-			<p>Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Ut reprehenderit labore eligendi tenetur, sapiente ab doloremque id provident dignissimos <br> ipsa perspiciatis voluptates sunt facilis minus omnis illo ea maxime nesciunt.</p>
-			<div class="icons">
-				<i class="fa fa-facebook"></i>
-				<i class="fa fa-twitter"></i>
-				<i class="fa fa-instagram"></i>
-				<i class="fa fa-linkedin"></i>
-			</div>
-			<p>Made With <i class="fa fa-heart"></i> by Sayeeda Saima with help of <i class="fa fa-heart"></i> Easy Tutorials  </p>
-		</section>
-		<!-- footer end -->
-		<!-- Javascript for toggle menu -->
-		<script>
-			var navLinks = document.getElementById("navLinks");
-			function showMenu(){
-				navLinks.style.right = "0";
-			}
-			function hideMenu(){
-				navLinks.style.right = "-200px";
-			}
-		</script>
-	</body>
-
+</body>
 </html>
