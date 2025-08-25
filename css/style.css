@@ -492,6 +492,14 @@ a {
 a:hover {
   color: #ffcc00; /* sets hover color (example: yellow/gold) */
 }
+.footer .icons img {
+  width: 30px;   /* set them all to the same width */
+  height: 30px;  /* set them all to the same height */
+  object-fit: contain; /* keeps aspect ratio inside the box */
+  margin: 0 8px; /* spacing between icons */
+  vertical-align: middle;
+}
+
 
 
 
